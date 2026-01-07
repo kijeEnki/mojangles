@@ -120,7 +120,8 @@ class SpaceProvider:
   def BDFGlyph(self, char: str):
     char = char[0]
     charWidth = self.getActualWidth(char)
-    return "0"*ceil(charWidth / 8)*2
+    if charWidth < 1: charWidth = 1
+    return "0"*ceil((charWidth) / 8)*2
 
 class ReferenceProvider:
   def __init__(self, desc: dict):
