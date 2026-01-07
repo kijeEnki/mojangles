@@ -19,7 +19,7 @@ provs = list(map(lambda it: it.resolve() if type(it) == providers.ReferenceProvi
 provs = list(itertools.chain.from_iterable(provs))
 
 preamble = f"""STARTFONT 2.1
-FONT -Mojang-Mojangles-medium-r-normal--{m.ascender}-{m.ascender * 10}-72-72-p-60-iso10646-1
+FONT -Mojang-Mojangles-Regular-r-Normal--{m.ascender}-{m.ascender * 10}-72-72-p-60-iso10646-1
 SIZE {m.em} 72 72
 FONTBOUNDINGBOX 12 12 0 -2
 STARTPROPERTIES 2
